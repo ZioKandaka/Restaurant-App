@@ -1,0 +1,18 @@
+npx sequelize-cli model:create --name Food --attributes name:string,description:string,price:integer,imgUrl:string,authorId:integer,categoryId:integer
+
+npx sequelize-cli model:create --name Category --attributes name:string
+
+npx sequelize-cli model:create --name User --attributes username:string,email:string,password:string,role:string,phoneNumber:string,address:string
+
+npx sequelize-cli model:create --name History -- attributes name:string,description:string,updateBy:string
+
+client id: 941736208536-hbftgp8in89ed5jb8gm8efjp40fdcroc.apps.googleusercontent.com
+client secret: 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
+
+railway vars set DATABASE_URL=postgresql://postgres:ZioBonlap59@db.wclueqrfuunjnonhjdhz.supabase.co:5432/postgres
+
+npx sequelize-cli model:create --name Customer --attributes email:string,password:string,role:string
+
+npx sequelize-cli model:create --name Favorite --attributes CustomerId:integer,FoodId:integer
+
+npx sequelize-cli db:create --env test

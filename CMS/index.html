@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>RESTaurant</title>
+</head>
+<body>
+    <!-- Navbar Start-->
+    <header class="navbar h-10 flex justify-around bg-slate-300" id="navbar">
+        <div style="display: flex; flex-direction: row; align-items: center; column-gap: 20px;">
+            <button class="btn btn-sm">Dashboard</button>
+            <button class="btn btn-sm">Foods</button>
+            <button class="btn btn-sm">Categories</button>
+            <button class="btn btn-sm">Logs</button>
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center; column-gap: 20px;">
+            <div class="flex items-center bg-slate-50 h-8 rounded-md">
+                <p class="navbar">Hey, {{username}}</p>
+            </div>
+            <button class="btn btn-sm">Logout</button>
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Login Start -->
+    <section>
+        ================================================================================================================================
+        <div class="bg-local bg-repeat h-screen bg-center"  id="login-head" style="display: flex; justify-content: center; align-items: center; background-image: url(./assets//istockphoto-515373062-612x612.jpg)">
+            <div class="h-4/6 w-2/6 bg-white drop-shadow-sm" style="padding: 50px; display: flex; align-items: center; justify-content: center; border-radius: 20px 0px 0px 25px;">
+                <!-- insert resto pic -->
+                <img src="./assets/pngwing.com (1).png" alt="food picture" style="width: 500px; padding-left: 10px; padding-top: 20px;">
+            </div>
+            <div class="h-4/6 w-2/6 bg-gradient-to-r bg-slate-700" style="padding: 50px; padding-left: 80px; border-radius: 0px 20px 20px 0px;">
+                <div style="color: white; font-weight: bold; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size:xx-large; margin-bottom: 20px;">
+                    <h2>Login</h2>
+                </div>
+                <div id="login-form" class="">
+                    <label for="username" style="color: white; font-weight: bold; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size:large;">E-mail</label><br>
+                    <input class="input input-bordered input-primary w-full max-w-xs" type="text" name="username" id="username">
+                    <br>
+                    <label for="password" style="color: white; font-weight: bold; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size:large;">Password</label><br>
+                    <input class="input input-bordered input-primary w-full max-w-xs" type="text" name="password" id="password"><br>
+                    <button class="btn btn-md btn-accent w-32" style="margin-top: 20px;">Login</button>
+                </div>
+                <div style="color: white; margin-top: 30px;" >
+                    <p>Don't have account?</p>
+                    <button class="btn btn-xs btn-accent" style="margin-top: 10px;">Sign in here</button>
+                </div>
+            </div>
+        </div>
+        ================================================================================================================================
+    </section>
+    <!-- Login End -->
+
+    <!-- Register Start -->
+    <Section>
+        ================================================================================================================================
+        <div style="display: flex; justify-content: center;">
+            <div id="register-left">
+                <img src="https://cdna.artstation.com/p/assets/images/images/050/089/394/large/steven-lo-ji-1.jpg?1654031250
+                " alt="logo restaurant" style="width: 100px;">
+                <h2>Few clicks away from creating your account</h2>
+                <img src="https://cdna.artstation.com/p/assets/images/images/050/089/394/large/steven-lo-ji-1.jpg?1654031250
+                " alt="some pic" style="width: 100px;">
+            </div>
+            <div>
+                <h2>Register</h2>
+                <h3>Manage all your foods efficiently</h3>
+                <p>Let's get all you set up so you can verify your personal account and begin managing our RESTaurant</p>
+                <form action="">
+                    <div style="display: flex; justify-content: space-evenly;">
+                        <div>
+                            <label for="username-register">Username</label><br>
+                            <input class="input input-bordered input-primary w-80" type="text" name="username-register" id="username-register"><br>
+
+                            <label for="email-register">Email</label><br>
+                            <input class="input input-bordered input-primary w-full max-w-xs" type="text" name="email-register" id="email-register"><br>
+
+                            <label for="password-register">Password</label><br>
+                            <input class="input input-bordered input-primary w-full max-w-xs" type="text" name="password-register" id="password-register"><br>
+                        </div>
+                        <div>
+                            <label for="phoneNumber-register">Phone Number</label><br>
+                            <input class="input input-bordered input-primary w-full max-w-xs" type="text" name="phoneNumber-register" id="phoneNumber-register"><br>
+
+                            <label for="address-register">Address</label><br>
+                            <textarea class="textarea textarea-primary" name="address-register" id="address-register" cols="26" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-sm bg-blue-600">Register</button>
+                </form>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+        ================================================================================================================================
+    </Section>
+    <!-- Register End -->
+
+    <!-- Dashboard Start -->
+    <section>
+        ================================================================================================================================
+        <div>
+            <div style="display: flex; justify-content: center;">
+                <h2>Dashboard</h2>
+            </div>
+            <div id="statistic" style="display: flex; justify-content: center;">
+                <div>
+                    <h3>Total Foods</h3>
+                    <p>10</p>
+                </div>
+                <div>
+                    <h3>Total Categories</h3>
+                    <p>5</p>
+                </div>
+            </div>
+        </div>
+        ================================================================================================================================
+    </section>
+    <!-- Dashboard End -->
+
+    <!-- Food Start -->
+    <section>
+        ======================================================================================================================================================
+        <div class="">
+            <div id="top-food" style="display: flex; flex-direction: row; justify-content:space-around;">
+                <div>
+                    <h2>Foods</h2>
+                </div>
+                <div>
+                    <button>Add Food</button>
+                </div>
+            </div>
+            <div id="table-food" class="flex justify-center">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Author</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>Burger</th>
+                            <th>Burger Pic</th>
+                            <th>Actually not a burger, just a kraby patty</th>
+                            <th>Rp 25.000</th>
+                            <th>admin@gmail.com</th>
+                            <th class="flex justify-center">
+                                <div>
+                                    <select name="status" id="status-food">
+                                        <option value="Active">Active</option>
+                                        <option value="Inctive">Inactive</option>
+                                        <option value="Archive">Archive</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <button>Edit</button>
+                                </div>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        ======================================================================================================================================================
+    </section>
+    <!-- Food End -->
+
+    <!-- Category Start -->
+    <section>
+        ======================================================================================================================================================
+        <div>
+            <div id="table-atas" class="flex justify-around">
+                <h2>Categories</h2>
+                <button>Add Category</button>
+            </div>
+            <div id="table-category" class="flex justify-center">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>Bread</th>
+                            <th><button>Edit</button></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        ======================================================================================================================================================
+    </section>
+    <!-- Category End -->
+
+    <!-- Log Start -->
+    <section>
+        =====================================================================================================================================================
+        <div>
+            <div id="log-atas" class="flex justify-around">
+                <div>
+                    <h2>Change Logs</h2>
+                </div>
+                <div>
+                    <h2>Filter</h2>
+                </div>
+            </div>
+            <div id="log-table" class="flex justify-center">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Updated By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>Burger</th>
+                            <th>Burger status changed from Active to Inactive</th>
+                            <th>admin@gmail.com</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        =====================================================================================================================================================
+    </section>
+    <!-- Log End -->
+
+    <!-- New Food Form Start -->
+    <section>
+        =====================================================================================================================================================
+        <div class="w-screen h-screen flex flex-col justify-center items-center">
+            <div class="w-4/6 h-2/6 flex items-center">
+                <h2>New Food</h2>
+            </div>
+            <div class="flex justify-center w-4/6 h-3/6 items-center" >
+                <form action="" class="flex flex-col justify-center w-5/6">
+                    <label for="new-food-name">Name</label>
+                    <input type="text" name="new-food-name" id="new-food-name" class="input input-bordered input-info w-full">
+
+                    <label for="new-food-category">Category</label>
+                    <select name="new-food-category" id="new-food-category" class="select select-info w-full">
+                        <option value="" selected hidden disabled>Please select category</option>
+                        <option value="bread">Bread</option>
+                    </select>
+
+                    <label for="new-food-description">Description</label>
+                    <input type="text" name="new-food-description" id="new-food-description" class="input input-bordered input-info w-full">
+
+                    <label for="new-food-price">Price</label>
+                    <input type="text" name="new-food-price" id="new-food-price" class="input input-bordered input-info w-full">
+
+                    <label for="new-food-imgUrl">Image</label>
+                    <input type="text" name="new-food-imgUrl" id="new-food-imgUrl" class="input input-bordered input-info w-full">
+                </form>
+            </div>
+            <div class="flex items-center">
+                <div style="margin: 20px;">
+                    <button class="btn btn-error">Cancel</button>
+                </div>
+                <div style="margin: 20px;">
+                    <button class="btn btn-info">Add Food</button>
+                </div>
+            </div>
+        </div>
+        =====================================================================================================================================================
+    </section>
+    <!-- New Food Form End -->
+
+    <!-- New Category Form Start -->
+    <section>
+        =====================================================================================================================================================
+        <div class="w-screen h-screen flex flex-col justify-center items-center">
+            <div class="w-4/6 h-2/6 flex items-center">
+                <h2>New Category</h2>
+            </div>
+            <div class="flex justify-center w-4/6 h-3/6 items-center" >
+                <form action="" class="flex flex-col justify-center w-5/6">
+                    <label for="new-category-name">Name</label>
+                    <input type="text" name="new-category-name" id="new-category-name" class="input input-bordered input-info w-full">
+                </form>
+            </div>
+            <div class="flex items-center">
+                <div style="margin: 20px;">
+                    <button class="btn btn-error">Cancel</button>
+                </div>
+                <div style="margin: 20px;">
+                    <button class="btn btn-info">Add Category</button>
+                </div>
+            </div>
+        </div>
+        =====================================================================================================================================================
+    </section>
+    <!-- New Category Form End -->
+</body>
+</html>

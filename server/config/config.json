@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "Challang2",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "JEST_DB_C3",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "ZioBonlap59",
+    "database": "postgres",
+    "host": "db.wclueqrfuunjnonhjdhz.supabase.co",
+    "dialect": "postgres"
+  }
+}
