@@ -27,9 +27,9 @@
                 <div class="mr-8">
                     <button @click.prevent="logout" class="btn btn-error bg-red-400 normal-case text-xl ml-10">Logout</button> 
                 </div>
-                <div class="mr-8">
+                <!-- <div class="mr-8">
                     <RouterLink to="/login" class="btn btn-info normal-case text-xl ml-10">Login</RouterLink> 
-                </div>
+                </div> -->
             </div>
         </div>
         

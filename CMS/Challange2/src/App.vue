@@ -35,7 +35,7 @@ export default {
   data() {
     return {
       currentPage: `${localStorage.getItem('token') ? 'dashboard' : 'login'}`,
-      ORIGIN: 'http://localhost:3001',
+      ORIGIN: 'https://restaurant-production-224c.up.railway.app',
       dashboard: {
         foodCount: 0,
         categoryCount: 0

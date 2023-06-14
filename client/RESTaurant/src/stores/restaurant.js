@@ -3,7 +3,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2'
 export const useRestaurantStore = defineStore('restaurant', {
     state: () => ({ 
-        ORIGIN: 'https://restaurant-challange3.up.railway.app/pub',
+        ORIGIN: 'https://restaurant-production-224c.up.railway.app/pub',
         food: [],
         favorites: [],
         search: null,

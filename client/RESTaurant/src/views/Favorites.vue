@@ -32,7 +32,7 @@
 </script>
 
 <template>
-    <div class="min-h-screen">
+    <div class="min-h-full">
         <div>
             <Navbar />
         </div>
