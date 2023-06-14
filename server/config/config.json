@@ -14,10 +14,6 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": "ZioBonlap59",
-    "database": "postgres",
-    "host": "db.wclueqrfuunjnonhjdhz.supabase.co",
-    "dialect": "postgres"
+    "use_env_variable": "DATABASE_URL"
   }
 }
