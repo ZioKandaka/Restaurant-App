@@ -14,7 +14,7 @@ import AddFood from './pages/AddFood.vue';
 import AddCategory from './pages/AddCategory.vue';
 import EditFood from './pages/EditFood.vue';
 import EditCategory from './pages/EditCategory.vue';
-import TableRowFood from './components/tableRowFood.vue';
+import TableRowFood from './components/TableRowFood.vue';
 
 export default {
   components: {
@@ -35,7 +35,7 @@ export default {
   data() {
     return {
       currentPage: `${localStorage.getItem('token') ? 'dashboard' : 'login'}`,
-      ORIGIN: 'https://challange2-production-2b34.up.railway.app',
+      ORIGIN: 'http://localhost:3001',
       dashboard: {
         foodCount: 0,
         categoryCount: 0
